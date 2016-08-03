@@ -1,34 +1,28 @@
 package main.Menus;
 
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 /**
  * Menu Class
  * @author Matts
  */
+
 public abstract class Menu extends JPanel {
-    
-    /**
-     * ArrayList that stores all generated menus to allow cross referencing
-     * between menus once they're initialized.
-     */
+
     public static ArrayList<Menu> menulist = new ArrayList();
     
-    private int menucode;
-    public final int getMenucode() {
+    private MenuCode menucode;
+    public final MenuCode getMenucode() {
         return menucode;
     }
-    public final void setMenucode(int menucode) {
+    public final void setMenucode(MenuCode menucode) {
         this.menucode = menucode;
     }
     
-    /**
-     * Using the menuCode passed to it, hides current menu and displays
-     * requested menu.
-     * @param i menuCode
-     */
-    public final void swapMenu(int i) {
+    public final void swapMenu(MenuCode i) {
         for (Menu menu : menulist) {
             if (menu.getMenucode() == i) {
                 menu.updateMenu();
@@ -39,5 +33,12 @@ public abstract class Menu extends JPanel {
     }
     
     public void updateMenu() {};
+    
+    public final void addButton (String name, ActionListener e) {
+        JButton button = new JButton(name);
+        button.addActionListener(e);
+        button.addActionListener((f) -> {System.out.println(name + " clicked.");});
+        this.add(button);
+    }
     
 }

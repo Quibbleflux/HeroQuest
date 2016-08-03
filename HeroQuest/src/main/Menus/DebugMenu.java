@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package main.Menus;
 
 import java.awt.GridLayout;
-import javax.swing.JButton;
 
 /**
  *
@@ -14,10 +8,15 @@ import javax.swing.JButton;
  */
 public class DebugMenu extends Menu {
     public DebugMenu() {        
-        this.setMenucode(5);
-        this.setLayout(new GridLayout(0,1,10,10));
+        this.setMenucode(MenuCode.DEBUG_MENU);
+        this.setLayout(new GridLayout(1,1,10,10));
+        
+        this.addButton("Test", (e) -> {
+           System.out.println("Testing"); 
+        });
 
                        
         this.setVisible(false);
+        Menu.menulist.add(this);
     }
 }
