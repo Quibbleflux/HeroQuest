@@ -14,7 +14,7 @@ public class DebugMenu extends Menu {
         this.addButton("Test", (e) -> {
            System.out.println("Testing"); 
         });
-
+        this.setSize(800,600);
                        
         this.setVisible(false);
         Menu.menulist.add(this);
