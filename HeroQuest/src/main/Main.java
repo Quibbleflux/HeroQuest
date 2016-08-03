@@ -13,6 +13,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Yes");
         System.out.println("No");
+        System.out.println("Maybe");
+        System.out.println("Dat boi");
         System.out.println("Dickbutt");
     }
 }
