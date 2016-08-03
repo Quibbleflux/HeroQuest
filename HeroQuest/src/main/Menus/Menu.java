@@ -1,4 +1,4 @@
-package main;
+package main.Menus;
 
 import java.util.ArrayList;
 import javax.swing.JPanel;

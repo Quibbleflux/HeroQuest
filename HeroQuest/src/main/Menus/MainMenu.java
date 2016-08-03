@@ -1,4 +1,4 @@
-package main;
+package main.Menus;
 
 import java.awt.GridLayout;
 import javax.swing.JButton;

@@ -1,5 +1,6 @@
 package main;
 
+import main.Menus.MainMenu;
 import javax.swing.JFrame;
 
 /**
