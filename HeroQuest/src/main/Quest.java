@@ -5,10 +5,12 @@
  */
 package main;
 
+import java.util.Timer;
+
 /**
  *
  * @author SPOO
  */
 public class Quest {
-    
+    private Timer questTimer;
 }

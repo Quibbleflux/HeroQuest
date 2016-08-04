@@ -10,7 +10,5 @@ import java.util.List;
 public class Inventory {
     private Shop shop;
     private List<Item> inventory = new ArrayList();
-    public Inventory() {
-    
-    }
+
 }

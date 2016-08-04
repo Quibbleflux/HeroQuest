@@ -5,13 +5,15 @@
  */
 package main;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author SPOO
  */
-public class Shop {
-    private List<Item> shopList = new ArrayList();
-}
+public enum EquipSlot {
+        HEAD,
+        CHEST,
+        LEGGINGS,
+        BOOTS,
+        WEAPON,
+        ACCESSORY
+    }

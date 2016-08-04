@@ -10,5 +10,5 @@ public class Game {
     private Inventory inventory;
     public Game() {
         
-    }    
+    }
 }

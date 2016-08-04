@@ -5,13 +5,10 @@
  */
 package main;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author SPOO
  */
-public class Shop {
-    private List<Item> shopList = new ArrayList();
+public class Equipment extends Item {
+    private EquipSlot slot;
 }

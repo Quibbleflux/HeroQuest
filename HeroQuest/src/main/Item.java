@@ -4,6 +4,6 @@ package main;
  *
  * @author Matts
  */
-public class Item {
-    
+public abstract class Item {
+    private int goldValue;
 }
