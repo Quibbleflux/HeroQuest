@@ -1,5 +1,6 @@
 package main;
 
+import main.Classes.Hero;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,5 +13,17 @@ public class Party {
     
     public Party() {
         
+    }
+
+    public List<Hero> getRoster() {
+        return roster;
+    }
+
+    public void setRoster(List<Hero> roster) {
+        this.roster = roster;
+    }
+    
+    public void addHero(Hero hero) {
+        roster.add(hero);
     }
 }

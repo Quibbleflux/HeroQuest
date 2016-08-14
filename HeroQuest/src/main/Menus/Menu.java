@@ -4,6 +4,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import main.Main;
 
 /**
  * Menu Class
@@ -28,6 +29,7 @@ public abstract class Menu extends JPanel {
                 menu.updateMenu();
                 menu.setVisible(true);
                 this.setVisible(false);
+                Main.repack();
             }
         }
     }

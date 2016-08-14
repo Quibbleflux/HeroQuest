@@ -8,5 +8,6 @@ package main.Menus;
 public enum MenuCode {
     MAIN_MENU,
     DEBUG_MENU,
-    GAME_MENU;
+    GAME_MENU,
+    HERO_MENU;
 }
